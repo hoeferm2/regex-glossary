@@ -1,11 +1,11 @@
 # regex-glossary
 
-Regular expressions are ......
+Regular expressions are expressions that form a search pattern that helps process text
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
-
+- I will be making a regular expression that can find phone numbers in a a multitude of formats
+- ^[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{4})$
 ## Table of Contents
 
 - [Anchors](#anchors)
@@ -18,7 +18,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-- A REGEX or regular expression is sequence of characters that defines a search pattern. Comes from the mathematical concepts of regular sets. You could use a word for your regualar expression example my search term is term and that finds lowercase t+e+r+m. This is a 'literal' character search. We can also search 'meta' character searches. In the video i watched the author created a regex to search for phone numbers which are a 3 number then a dash the 3 numbers and another dash and 4 more numbers.
+- A REGEX or regular expression is sequence of characters that defines a search pattern. Comes from the mathematical concepts of regular sets. You could use a word for your regualar expression example my search term is term and that finds lowercase t+e+r+m. This is a 'literal' character search. We can also search 'meta' character searches. I will be creating a search to find numbers and characters.
 - \d = any digit 0-9
 - '-' a dash so that could be 
 . is a meta that means any character
@@ -54,8 +54,7 @@ While we could hard code \d\d\d-\d\d\d-\d\d\d\d we will find a more elegant solu
 - to use a character one must use a backslash \ this indicates that charater following it is a special character
 - \t is tab
 - \n is new line
-## Expression
-- ^[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{4})$
+
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
