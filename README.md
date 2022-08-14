@@ -18,25 +18,22 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Character Escapes](#character-escapes)
 
 ## Regex Components
-
-- ^[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{4})$
-
 - A REGEX or regular expression is sequence of characters that defines a search pattern. Comes from the mathematical concepts of regular sets. You could use a word for your regualar expression example my search term is term and that finds lowercase t+e+r+m. This is a 'literal' character search. We can also search 'meta' character searches. In the video i watched the author created a regex to search for phone numbers which are a 3 number then a dash the 3 numbers and another dash and 4 more numbers.
 - \d = any digit 0-9
 - '-' a dash so that could be 
-* Matching a phone number that follows the 3-3-4 format: `\d\d\d-\d\d\d-\d\d\d\d`
-to enable regular expressions 
 . is a meta that means any character
 '*' meta means 0 or more.
 .* is a wildcard matches everthing
+While we could hard code \d\d\d-\d\d\d-\d\d\d\d we will find a more elegant solution to searching phone numbers
 ### Anchors
+- anchors give our searchers a starting point and an ending point
 - ^ this matches the positon  before the first character in the string
 - $ represents the end of the string
 ### Quantifiers
 - ` /^[\.-)( ]* ` the * is a quantifier that indicates zero or more occurances of the precedings element, in this case effectively removing any false negatives due to spaces periods dashes or parenthesis.
-
 ### Grouping Constructs
-- sub expressions 
+- sub expressions capture the substrings of an input string.
+- 
 
 ### Bracket Expressions
 - [] indicatess a set of characters to match 
@@ -57,6 +54,8 @@ to enable regular expressions
 - to use a character one must use a backslash \ this indicates that charater following it is a special character
 - \t is tab
 - \n is new line
+## Expression
+- ^[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{4})$
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
