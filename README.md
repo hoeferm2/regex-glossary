@@ -1,8 +1,6 @@
 # regex-glossary
 
-# Title (replace with your title)
-
-Introductory paragraph (replace this with your text)
+Regular expressions are ......
 
 ## Summary
 
@@ -23,10 +21,9 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 - ^[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{3})[\.\-\)\(]*([0-9]{4})$
 
-A REGEX or regular expression is sequence of characters that defines a search pattern. Comes from the mathematical concepts of regular sets. You could use a word for your regualar expression example my search term is term and that finds lowercase t+e+r+m. This is a 'literal' character search. We can also search 'meta' character searches. In the video i watched the author created a regex to search for phone numbers which are a 3 number then a dash the 3 numbers and another dash and 4 more numbers.
-\d = any diget 0-9
-'-' a dash
-so that could be 
+- A REGEX or regular expression is sequence of characters that defines a search pattern. Comes from the mathematical concepts of regular sets. You could use a word for your regualar expression example my search term is term and that finds lowercase t+e+r+m. This is a 'literal' character search. We can also search 'meta' character searches. In the video i watched the author created a regex to search for phone numbers which are a 3 number then a dash the 3 numbers and another dash and 4 more numbers.
+- \d = any digit 0-9
+- '-' a dash so that could be 
 * Matching a phone number that follows the 3-3-4 format: `\d\d\d-\d\d\d-\d\d\d\d`
 to enable regular expressions 
 . is a meta that means any character
@@ -53,7 +50,7 @@ to enable regular expressions
 - including the ^ in the square brackets means that anything that does NOT match the referecened characters will be a match ex . [^aeiou] means anything BUT vowels
 
 ### The OR Operator
-- 
+- The OR operator '|' allows the searcher to create a search with mulitple matches. 
 ### Flags
 - Flags are what enxompasses the scope of your search be that on a global scale or simple multiline
 ### Character Escapes
